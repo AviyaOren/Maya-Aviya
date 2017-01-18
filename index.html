@@ -1,0 +1,240 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Maya - Aviya</title>
+<style type="text/css">
+  @font-face {
+    font-family: handWriteFont;
+    src: url('JennaSue.ttf');
+}
+.handWrite
+{
+  font-family:handWriteFont;
+  font-size:6em;
+  margin-top:1050px;
+  position:inherit;
+  padding-left:300px;
+  }
+body {
+  width: 100%;
+}
+.container
+{
+  position: fixed;
+  top: 20%;
+}
+
+figure img{
+  display:none;
+}
+figure .img {
+  width:800px;
+  height:800px;
+  background-size:cover;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+figure figcaption {
+  text-align: center;
+  font-family: 'Reenie Beanie', cursive;
+  
+}
+
+figure figcaption h2 {
+  margin:0;
+  padding:0;
+  margin-top:50px;
+  display:block;
+  line-height: 1em;
+  width: 800px;
+  font-size:3em;
+}
+
+figure figcaption p {
+  display:none;
+}
+  
+.headerImage
+{
+  width: 800px;
+  margin-left:50px;
+  margin-top:100px;
+  z-index:1;
+}
+
+figure {
+  background-color: white;
+  box-shadow:         3px 3px 5px 6px rgba(0,0,0, 0.2);
+  padding: 60px;
+  width: 800px;
+  transform: scale(0.7);
+  transition: all 1s ease-in-out,
+              z-index 0s ease-in-out 1s;
+  position:absolute;
+  z-index:0;
+}
+
+figure:nth-child(2n) {  
+  transform: rotate(10deg) scale(0.7);
+}
+
+figure:nth-child(3n) {  
+  transform: rotate(-10deg) scale(0.7);
+}
+
+figure.prev, figure.next{
+  top:0;
+  transform: zoom(0.9);
+}
+
+figure.prev {
+  margin-left: -20px;
+}
+
+figure.next {
+  margin-left:20px;
+}
+
+figure.current {
+  z-index:1;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+</head>
+<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+<body>
+  <img src="http://www.passionassembly.org/wp-content/uploads/2014/09/our-story.gif" />
+  <div class="container">
+<figure class="current">
+  <img src="http://farm8.staticflickr.com/7324/12378548645_2d3da9fc07_b.jpg" />
+  <div class="img" style="background-image: url(http://statistics.wdfiles.com/local--files/ch7/z.png)" onClick="figureClick"></div>
+  <figcaption>
+    <h2>אז הכל התחיל פה</h2>
+  </figcaption>
+</figure>
+<figure>
+  <img src="https://s30.postimg.org/rkm9a4ssh/IMG_20160408_WA0011.jpg" />
+  <div class="img" style="background-image: url(https://s30.postimg.org/rkm9a4ssh/IMG_20160408_WA0011.jpg)"></div>
+  <figcaption>
+    <h2>משם עברנו כבר לא מעט</h2>
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="https://s30.postimg.org/rynl9qcw1/IMG_20160501_WA0004.jpg" />
+  <div class="img" style="background-image: url(https://s30.postimg.org/rynl9qcw1/IMG_20160501_WA0004.jpg)"></div>
+  <figcaption>
+    <h2>בילינו</h2>
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="https://s30.postimg.org/wtha80b7l/IMG_20160819_140826.jpg" />
+  <div class="img" style="background-image:url(https://s30.postimg.org/wtha80b7l/IMG_20160819_140826.jpg)"></div>
+  <figcaption>
+    <h2>אכלנו</h2>
+  </figcaption>
+</figure>
+  
+<figure>
+  <img src="https://s30.postimg.org/75l6lbkch/IMG_0765.jpg" />
+  <div class="img" style="background-image: url(https://s30.postimg.org/75l6lbkch/IMG_0765.jpg)"></div>
+  <figcaption>
+    <h2>טיילנו בחו״ל </h2>
+  </figcaption>
+</figure>  
+  
+<figure>
+  <img src="https://s30.postimg.org/9tamvoddt/IMG_20160827_011632.jpg" />
+  <div class="img" style="background-image:url(https://s30.postimg.org/9tamvoddt/IMG_20160827_011632.jpg)"></div>
+  <figcaption>
+    <h2>שרנו</h2>
+  </figcaption>
+</figure>
+  
+  <figure>
+  <img src="https://s30.postimg.org/muwblj1s1/IMG_3532.jpg" />
+  <div class="img" style="background-image:url(https://s30.postimg.org/muwblj1s1/IMG_3532.jpg)"></div>
+  <figcaption>
+    <h2>עשינו סקי</h2>
+  </figcaption>
+</figure>
+  
+  
+  <figure>
+  <img src="https://s30.postimg.org/pz6zibikh/IMG_0833.jpg" />
+  <div class="img" style="background-image:url(https://s30.postimg.org/pz6zibikh/IMG_0833.jpg)"></div>
+  <figcaption>
+    <h2>ברחנו</h2>
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="https://s29.postimg.org/n3o3y2w5j/IMG_20160708_WA0012.jpg" />
+  <div class="img" style="background-image: url(https://s29.postimg.org/n3o3y2w5j/IMG_20160708_WA0012.jpg)"></div>
+  <figcaption>
+    <h2>עברנו ביחד</h2>
+  </figcaption>
+</figure>
+<figure>
+  <img src="https://s30.postimg.org/qd8bhx2o1/IMG_2395.jpg" />
+  <div class="img" style="background-image: url(https://s30.postimg.org/qd8bhx2o1/IMG_2395.jpg)"></div>
+  <figcaption>
+    <h2>בינגו הצטרף למשפחה</h2>
+  </figcaption>
+</figure>
+  <figure>
+  <img src="https://s27.postimg.org/stbibhd2b/IMG_3420.jpg" />
+  <div class="img" style="background-image: url(https://s27.postimg.org/stbibhd2b/IMG_3420.jpg)"></div>
+  <figcaption>
+    <h2>ועכשיו הגיע הזמן לשאול את השאלה</h2>
+  </figcaption>
+</figure>
+  <figure>
+  <img src="https://s27.postimg.org/stbibhd2b/IMG_3420.jpg" />
+  <div class="img" style="background-image: url(https://s27.postimg.org/stbibhd2b/IMG_3420.jpg)"></div>
+  <figcaption>
+    <h2>היא החזירה תשובה</h2>
+  </figcaption>
+</figure>
+  <figure>
+  <img src="https://s27.postimg.org/stbibhd2b/IMG_3420.jpg" />
+  <div class="img" style="background-image: url(https://s27.postimg.org/stbibhd2b/IMG_3420.jpg)"></div>
+  <figcaption>
+    <h2>החלטנו לתת לכם קצת זמן לעכל אז נסענו לכמה ימים, נחזור בשני.</h2>
+  </figcaption>
+</figure>
+
+  <figure>
+  <img src="https://s27.postimg.org/stbibhd2b/IMG_3420.jpg" />
+  <div class="img" style="background-image: url(https://s27.postimg.org/stbibhd2b/IMG_3420.jpg)"></div>
+</figure>
+      
+  <div class="handWrite">
+    With ^ , Maya & Aviya
+  </div>
+    
+  </div>
+  </body>
+</html>
+  <script type="text/javascript">
+setInterval(function() { 
+  var nxt = $('figure.current')
+    .removeClass("current")
+    .addClass("prev")
+    .next();
+  if(nxt.length == 0) {
+    
+    nxt = $('figure:first');
+    $('figure:gt(0)').addClass('next').removeClass('prev');
+  }
+  
+    nxt.addClass("current")
+    .removeClass("next").removeClass("prev") },4000);
+  </script>
