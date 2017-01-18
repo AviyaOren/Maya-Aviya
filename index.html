@@ -102,6 +102,9 @@ figure.next {
 figure.current {
   z-index:1;
 }
+#music {
+  display:none;
+}
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
@@ -222,9 +225,12 @@ figure.current {
     
   </div>
   </body>
-  <audio controls autoplay>
-  <source src="Coldplay-Green Eyes.ogg" type="audio/ogg">
+<div id="music">
+<audio autoplay>
+  <source src="Coldplay-Green Eyes.ogg" type="audio/mpeg">
+  <p>If you can read this, your browser does not support the audio element.</p>
 </audio>
+</div>
 </html>
   <script type="text/javascript">
 setInterval(function() { 
